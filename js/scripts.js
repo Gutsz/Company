@@ -6,6 +6,21 @@ jQuery(document).ready(function () {
     })
 });
 
+jQuery(document).ready(function () {
+    var mySwiper = new Swiper ('.swiper-container__quote', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+});
 
 let show = () => {
     if($('.menu').hasClass('active'))  {
@@ -14,8 +29,6 @@ let show = () => {
         $('.menu').addClass('active');
     }
 }
-
-
 
 jQuery(document).ready(function () {
     $('.navigation').on('click', '.menu-icon', function () {
