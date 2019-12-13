@@ -47,6 +47,7 @@ li {
 .container{
   max-width: 1630px;
   margin: 0 auto;
+  overflow:hidden;
 }
 .wrapper{
   overflow: hidden;
@@ -426,6 +427,7 @@ body{
     display: block;
     position: absolute;
     right: 0%;
+    margin-right: 20px;
   }
 
   .navigation .left-navigation,
