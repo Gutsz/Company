@@ -47,7 +47,6 @@ li {
 .container{
   max-width: 1630px;
   margin: 0 auto;
-  overflow:hidden;
 }
 .wrapper{
   overflow: hidden;
@@ -189,6 +188,7 @@ body{
 
 .swiper-container__quote{
   position: relative;
+  overflow: hidden;
 }
 
 .swiper-button-next,
@@ -634,11 +634,12 @@ body{
   .menu li{
     padding: 10px 0;
     border-bottom: 2px solid #ffffff;
+    transform: .3s;
   }
   
   .menu li:hover{
-    background: rgba(0, 0, 0, 0.8);
-  
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;  
   }
 
   .swiper-slide img{
